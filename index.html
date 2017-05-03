@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+
+        <h1>To Do</h1>
+
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+        <form class="form-inline" id="newtodo">
+          <div class="form-group">
+            <label for="exampleInputName2">To Do</label>
+            <input type="text" class="form-control" id="name" placeholder="To Do">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail2">Due Date</label>
+          <input type="date" class="form-control" id="date" placeholder="">
+        </div>
+        <input type="submit" value="Add ToDo" class="btn btn-default">
+      </form>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>To Dos</h1>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Action</th>
+
+              </tr>
+            </thead>
+            <tbody id="tdbody">
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1> Completed </h1>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Action</th>
+
+              </tr>
+            </thead>
+            <tbody id="tdcomplete">
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="js/main.js">
+     </script>
+  </body>
+</html>
